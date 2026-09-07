@@ -1,5 +1,7 @@
 const swaggerJSDoc = require("swagger-jsdoc");
 
+const apiUrl = process.env.PUBLIC_API_URL || process.env.RENDER_EXTERNAL_URL || "http://localhost:3000";
+
 const options = {
   definition: {
     openapi: "3.0.3",
@@ -10,12 +12,10 @@ const options = {
     },
     servers: [
       {
-        url: "http://localhost:3000",
-        description: "Desarrollo local"
-      },
-      {
-        url: "https://TU-SERVICIO.onrender.com",
-        description: "Render: reemplazar por la URL asignada"
+        url: apiUrl,
+        description: process.env.PUBLIC_API_URL || process.env.RENDER_EXTERNAL_URL
+          ? "API publicada"
+          : "Desarrollo local"
       }
     ]
   },
