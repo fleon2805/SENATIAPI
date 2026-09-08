@@ -26,6 +26,8 @@ URLs locales:
 - OpenAPI JSON: http://localhost:3000/openapi.json
 - Salud del servicio: http://localhost:3000/health
 
+Guia completa de consumo y pruebas: [docs/guia-consumo-api.md](docs/guia-consumo-api.md)
+
 ## Endpoint
 
 `GET /api/v1/clientes/{codigoCliente}`

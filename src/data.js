@@ -10,6 +10,12 @@ const clients = new Map([
     nombreCompleto: "CARLOS ALBERTO DAMACEN SANCHEZ",
     zonal: "Lima Norte",
     areaGerencia: "Gerencia de Atención al Cliente"
+  }],
+  ["001444444", {
+    codigoCliente: "001444444",
+    nombreCompleto: "JUAN CARLOS PEREZ MENDOZA",
+    zonal: "Lima Centro",
+    areaGerencia: "Gerencia de Atención al Cliente"
   }]
 ]);
 

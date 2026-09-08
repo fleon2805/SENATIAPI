@@ -9,7 +9,7 @@ Solicitar al cliente la informacion y autorizaciones necesarias para integrar la
 - Metodo: `GET`
 - Ruta: `/api/v1/clientes/{codigoCliente}`
 - Entrada: codigo de cliente numerico de exactamente 9 digitos.
-- Ejemplo de entrada: `000000375`
+- Ejemplos de entrada: `000000375` y `001079652`
 - Autenticacion: por definir con el cliente antes de pasar a produccion. Para una implementacion real se recomienda API key o OAuth 2.0 sobre HTTPS.
 
 ## Datos requeridos al cliente
@@ -30,7 +30,7 @@ Solicitar al cliente la informacion y autorizaciones necesarias para integrar la
 
 ```bash
 curl --request GET \
-  --url https://TU-SERVICIO.onrender.com/api/v1/clientes/000000375 \
+  --url https://senatiapi.onrender.com/api/v1/clientes/000000375 \
   --header 'Accept: application/json'
 ```
 
